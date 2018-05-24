@@ -6,23 +6,18 @@ function whisper(string) {
   return string.toLowerCase();
 }
 
+var uppercase = "HELLO!";
+var lowercase = 'hello!';
+
 function logShout(string) {
   console.log(string.toUpperCase());
+  uppercase.toUpperCase() === uppercase; // true
 }
 
 function logWhisper(string) {
   console.log(string.toLowerCase());
+  lowercase.toLowerCase() === lowercase;  // true
 }
-
-var uppercase = "HELLO!"
-uppercase.toUpperCase() === uppercase; // true
-
-var lowercase = 'hello!'
-lowercase.toLowerCase() === lowercase;  // true
-
-var mixedCase = 'Hi there!'
-mixedCase.toLowerCase() === mixedCase; // false
-mixedCase.toUpperCase() === mixedCase; // false
 
 function sayHiToGrandma(string) {
   if (string === lowercase) {
